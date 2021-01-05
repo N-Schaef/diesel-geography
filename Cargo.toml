@@ -1,6 +1,6 @@
 [package]
 name = "diesel-geography"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Boscop"]
 readme = "README.md"
 license = "MIT OR Apache-2.0"
@@ -12,5 +12,5 @@ categories = ["database"]
 
 [dependencies]
 diesel = { version = "1.4", features = ["postgres"] }
-postgis = "0.7"
+postgis = { git = "https://github.com/jmpunkt/rust-postgis", branch = "optimize-dependencies"}
 serde = { version = "1.0", features = ["derive"], optional = true }
